@@ -27,3 +27,27 @@ function afficher(data) {
 
   });
 }
+const exchangeBook = document.getElementById("exchangeBook");
+function exchange(data) {
+
+  data.forEach(book => {
+    if (book.offers_count) {
+      book.offers.forEach(offer => {
+        exchangeBook.innerHTML += `<div class="border"> 
+                                <p class="text-[#1F675D]">Book  Exchange</p>
+                                <h3>${offer.exchange_type} </h3>
+                                <p class="text-[#687673]">${offer.status} </p>
+                                <p class="text-[#687673]">${offer.message}</p>
+                                <div lktouba>
+                                    <span>Clean code
+                                    </span>
+                                    <span>Architecture</span>
+
+                                </div>
+                                </div>` 
+      })
+
+    }
+  })
+
+}
