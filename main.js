@@ -51,3 +51,27 @@ function exchange(data) {
   })
 
 }
+const inputRecherche=document.getElementById("inputRecherche");
+ function recherche(data){
+   inputRecherche.addEventListener("input",(event)=>{
+  let valueInput=event.target.value;
+
+  if(!valueInput==""){
+
+    let found=[];
+      found.push(data.find((element)=>element.book.title.toLowerCase()==valueInput.toLowerCase()))
+      exchangeBook.textContent=""
+     afficher(found)
+     console.log(found)
+     console.log(afficher(found))
+  }else{
+     afficher(data)
+     exchange(data)
+
+  }
+})
+ }
+
+ function RypeExhange(){
+
+ }
