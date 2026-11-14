@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-    <header>
-        <a href="">
+<body class="bg-[#F6F5F0]">
+    <header class="border flex ">
+        <a href="" class="">
             <span>
-                <i class="fa-solid fa-book"></i>
+                <i class="fa-solid fa-book "></i>
 
             </span>
             Book <span>Swap</span>
@@ -24,34 +25,35 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="bg-[#174F48] rounded-b-lg flex">
             <div>
-                <p>Bibliothèque collaborative</p>
-                <h1>Les livres circulent.
-                    <span>Les idées aussi.</span>
+                <p class="text-[#A9D6C6]">Bibliothèque collaborative</p>
+                <h1 class="text-[#FFFFFF]">Les livres circulent.
+                    <br>
+                    <span class="text-[#A9D6C6]">Les idées aussi.</span>
                 </h1>
-                <p>Découvrez les demandes d’échange de la communauté et donnez une nouvelle <br>vie à vos livres
+                <p class="text-[#A9D6C6]">Découvrez les demandes d’échange de la communauté et donnez une nouvelle <br>vie à vos livres
                     techniques.
                 </p>
             </div>
-            <div>
-                <strong>3</strong>
-                <p>demandes <br>
+            <div class="border flex rounded-xl  ">
+                <strong class="text-[#FFFFFF]">3</strong>
+                <p class="text-[#FFFFFF]">demandes <br>
                     disponibles</p>
             </div>
         </section>
-        <section>
-            <div>
-                <label for="">
+        <section class="flex">
+            <div class="flex bg-[#FFFFFF] ">
+                <label for="" class="border" >
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text">
+                    <input type="text" class="border" id="inputRecherche">
                 </label>
 
             </div>
-            <div>
-                <button>Tous</button>
+            <div class="flex bg-[#6F7E7B] border ">
+                <button class="border">Tous</button>
                 <button>Définitif</button>
-                <button>Temporiaire</button>
+                <button id="btnTemp">Temporiaire</button>
             </div>
             <div>
                 <button>
@@ -75,23 +77,25 @@
                 <hr>
                 <div>
                     <div livre1>
-                        <p>Livre proposé
+                        <p class="text-[#687673]">Livre proposé
                         </p>
                         <div>
                             <img src="" alt="">
-                            <div>
-                                <p>Bonnes pratiques</p>
+                            <div id="livres" >
+                                <!-- <p class="text-[#1F675D]">Bonnes pratiques</p>
                                 <h3>Clean Code </h3>
-                                <p>Robert C. Martin </p>
-                                <p>Un guide incontournable pour écrire du code lisible, simple et maintenable.</p>
+                                <p class="text-[#687673]">Robert C. Martin </p>
+                                <p class="text-[#687673]">Un guide incontournable pour écrire du code lisible, simple et maintenable.</p>
                                 <div lktouba>
                                     <span>Clean code
                                     </span>
                                     <span>Architecture</span>
 
-                                </div>
+                                </div> -->
                             </div>
+                             <div id="exchangeBook" >
 
+                             </div>
                         </div>
 
 
