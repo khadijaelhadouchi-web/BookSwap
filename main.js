@@ -9,3 +9,21 @@ async function chargerDemandes() {
 }
 
 chargerDemandes();
+let divLivres = document.getElementById("livres")
+function afficher(data) {
+ divLivres.textContent=""
+  data.forEach(element => {
+    divLivres.innerHTML += `  <div class="border"> <p class="text-[#1F675D]">Book</p>
+                                <h3>${element.book.title} </h3>
+                                <p class="text-[#687673]">${element.book.author} </p>
+                                <p class="text-[#687673]">${element.book.description}</p>
+                                <div lktouba>
+                                    <span>Clean code
+                                    </span>
+                                    <span>Architecture</span>
+
+                                </div>
+                                </div>`
+
+  });
+}
